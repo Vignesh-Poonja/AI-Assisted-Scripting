@@ -37,28 +37,28 @@ The script:
 
 ```bash
 # Make the script executable
-chmod +x manage_vpc.sh
+chmod +x aws_vpc.sh
 ```
 
 ### Create VPC and Subnet
 ```bash
-./manage_vpc.sh create [region]
+./aws_vpc.sh create [region]
 ```
 - `region` is optional (defaults to `us-east-1` if not provided).
 
 **Example:**
 ```bash
-./manage_vpc.sh create us-west-2
+./aws_vpc.sh create us-west-2
 ```
 
 ### Destroy VPC and Subnet
 ```bash
-./manage_vpc.sh destroy [region]
+./aws_vpc.sh destroy [region]
 ```
 
 **Example:**
 ```bash
-./manage_vpc.sh destroy us-west-2
+./aws_vpc.sh destroy us-west-2
 ```
 
 ---
@@ -85,7 +85,7 @@ When you **destroy** resources, you'll see:
 ## 📋 Example Session
 
 ```bash
-$ ./manage_vpc.sh create
+$ ./aws_vpc.sh create
 AWS CLI is installed.
 VPC created with ID: vpc-0abcd1234ef567890
 VPC tagged with Name: MyVPC
@@ -98,7 +98,7 @@ VPC and Subnet created successfully.
 
 
 ```bash
-$ ./manage_vpc.sh destroy
+$ ./aws_vpc.sh destroy
 Found VPC with ID: vpc-0abcd1234ef567890
 Found Subnet with ID: subnet-0abcd1234ef567890
 Subnet deleted successfully.
