@@ -1,7 +1,7 @@
 # AWS VPC Management Script
 
 ## 📄 Description
-This is a simple Bash script to **create** or **destroy** a **VPC** and **subnet** in AWS.
+This is a simple Bash script that, when provided with a command line argument, creates or destroys a VPC and subnet in AWS.
 
 The script:
 - Verifies AWS CLI installation and configuration
@@ -93,6 +93,9 @@ Subnet created with ID: subnet-0abcd1234ef567890
 Subnet tagged with Name: MySubnet
 VPC and Subnet created successfully.
 ```
+![image](https://github.com/user-attachments/assets/b63d8a80-9c9f-4a5a-ab30-90cfbf404452)
+![image](https://github.com/user-attachments/assets/976551ca-f7f9-43f9-8238-554b83fd1204)
+
 
 ```bash
 $ ./manage_vpc.sh destroy
@@ -101,13 +104,6 @@ Found Subnet with ID: subnet-0abcd1234ef567890
 Subnet deleted successfully.
 VPC deleted successfully.
 ```
+![image](https://github.com/user-attachments/assets/b7b8c2ed-4814-4d04-8415-0b75f6e01bbd)
 
----
 
-## 🛠️ Author
-*Generated automatically based on project structure.*
-
----
-
-Would you also like me to give you a `sample folder structure` if you plan to put this on GitHub? 📂🚀  
-It will make it look even more professional!
